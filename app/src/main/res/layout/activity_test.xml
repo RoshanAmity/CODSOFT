@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/colorBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity">
+
+    <TextView
+        android:id="@+id/QuestionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="150sp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="15sp"
+        android:paddingBottom="50dp"
+        android:paddingRight="30sp"
+        android:paddingLeft="30sp"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:background="@drawable/semicircle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/QuestionNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="70sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20sp"
+            android:orientation="vertical"
+            tools:ignore="MissingClass">
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/shape"
+                android:padding="30sp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"/>
+
+        <LinearLayout
+            android:id="@+id/Alayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60sp"
+            android:orientation="horizontal"
+            android:background="@drawable/shape"
+            android:padding="10sp"
+            tools:ignore="MissingClass">
+            <TextView
+                android:id="@+id/A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle"
+                android:padding="15sp"
+                android:layout_marginLeft="10sp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:text=" A "/>
+
+            <TextView
+                android:id="@+id/AText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:padding="15sp"
+                android:layout_marginLeft="10sp"
+                android:textSize="25sp"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Blayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal"
+                android:background="@drawable/shape"
+                android:padding="10sp"
+                tools:ignore="MissingClass">
+
+                <TextView
+                    android:id="@+id/B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle"
+                    android:padding="15sp"
+                    android:layout_marginLeft="10sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:text=" B "/>
+
+                <TextView
+                    android:id="@+id/BText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape"
+                    android:padding="15sp"
+                    android:layout_marginLeft="10sp"
+                    android:textSize="25sp"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Clayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal"
+                android:background="@drawable/shape"
+                android:padding="10sp"
+                tools:ignore="MissingClass">
+
+                <TextView
+                    android:id="@+id/C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle"
+                    android:padding="15sp"
+                    android:layout_marginLeft="10sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:text=" C "/>
+
+                <TextView
+                    android:id="@+id/CText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape"
+                    android:padding="15sp"
+                    android:layout_marginLeft="10sp"
+                    android:textSize="25sp"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Dlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal"
+                android:background="@drawable/shape"
+                android:padding="10sp"
+                tools:ignore="MissingClass">
+
+                <TextView
+                    android:id="@+id/D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle"
+                    android:padding="15sp"
+                    android:layout_marginLeft="10sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:text=" D "/>
+
+                <TextView
+                    android:id="@+id/DText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape"
+                    android:padding="15sp"
+                    android:layout_marginLeft="10sp"
+                    android:textSize="25sp"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_marginTop="50sp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="Next"
+                android:alpha="0"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
